@@ -233,6 +233,41 @@ header {
   background-attachment: fixed;
 }
 
+/*-----------------------ABOUT-------------------------*/
+.image__card1 {
+  background-image: url(assets/backgrounds/image1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.image__card2 {
+  background-image: url(assets/backgrounds/image2.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.image__card3 {
+  background-image: url(assets/backgrounds/image3.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.image__card4 {
+  background-image: url(assets/backgrounds/image4.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.image__card5 {
+  background-image: url(assets/backgrounds/image5.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.image__card6 {
+  background-image: url(assets/backgrounds/image6.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.size33 {
+  flex-basis: 33%;
+}
+
 /*---------------------FOOTER----------------------------------------*/
 footer {
   height: 240px;
