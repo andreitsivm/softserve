@@ -29,3 +29,6 @@ input:focus {
 textarea .form__control {
   height: auto;
 }
+.contacts {
+  margin-right: 30px;
+}

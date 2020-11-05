@@ -54,23 +54,40 @@ a {
   flex-direction: column;
 }
 /*-----------------------CONTAINER---------------------------*/
+/*Desktop*/
 .container {
-  max-width: 1170px;
+  max-width: 1200px;
+  padding: 0 15px;
   margin: 0 auto;
 }
-@media (min-width: 769px) {
+/*Laptop*/
+@media (max-width: 1200px) {
   .container {
-    max-width: 990px;
+    max-width: 970px;
   }
 }
-@media (min-width: 992px) {
+/*Tab*/
+@media (max-width: 992px) {
   .container {
-    max-width: 1024px;
+    max-width: 750px;
+  }
+  .burger {
+    display: block;
+  }
+  .menu {
+    display: none;
   }
 }
-@media (min-width: 1200px) {
+/*Mobile*/
+@media (max-width: 767px) {
   .container {
-    max-width: 1170px;
+    max-width: none;
+  }
+  .burger {
+    display: block;
+  }
+  .menu {
+    display: none;
   }
 }
 
@@ -130,7 +147,6 @@ header {
   align-items: center;
 }
 .info .banner {
-  width: 1000px;
 }
 .title {
   font-size: 80px;
@@ -236,43 +252,47 @@ header {
 /*-----------------------ABOUT-------------------------*/
 .about {
   background-color: #eee;
+  height: 500px;
 }
 
-.image__card1 {
-  height: 300px;
-  flex-grow: 1;
+.about__card {
+  height: 100%;
+}
+.card1 {
   background-image: url(assets/backgrounds/image1.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-position-x: 50%;
+  background-position-y: 50%;
 }
-.image__card2 {
+.card2 {
   background-image: url(assets/backgrounds/image2.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-position-x: 50%;
+  background-position-y: 50%;
 }
-.image__card3 {
+.card3 {
   background-image: url(assets/backgrounds/image3.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
-.image__card4 {
+.card4 {
   background-image: url(assets/backgrounds/image4.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
-.image__card5 {
+.card5 {
   background-image: url(assets/backgrounds/image5.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
-.image__card6 {
+.card6 {
   background-image: url(assets/backgrounds/image6.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
-.size33 {
-  flex-basis: 33%;
-}
+
 /*---------------------news-------------------*/
 #news {
   background-color: #eee;
@@ -302,6 +322,7 @@ header {
   background-position-y: 50%;
   block-size: contain;
 }
+
 /*---------------------FOOTER----------------------------------------*/
 footer {
   height: 240px;
