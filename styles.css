@@ -12,6 +12,9 @@ a {
 .btn {
   color: #fff;
   font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 200px;
   height: 50px;
   padding: 5px 15px;
@@ -34,12 +37,27 @@ a {
 .btn-secondary:hover {
   background-color: green;
 }
+.black {
+  color: #000;
+}
+.white {
+  color: #fff;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  flex-direction: column;
+}
 /*-----------------------CONTAINER---------------------------*/
 .container {
-  max-width: 568px;
+  max-width: 1170px;
   margin: 0 auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .container {
     max-width: 990px;
   }
@@ -67,18 +85,16 @@ header {
   align-items: center;
   height: 60px;
 }
-.header__body .header__logo {
+.logo {
   font-weight: bold;
   cursor: pointer;
   color: #fff;
   font-size: 32px;
 }
-ul.menu {
-  list-style-type: none;
+.burger {
+  display: none;
 }
-ul.menu li {
-  display: inline-block;
-}
+
 .link {
   color: #fff;
   margin-right: 30px;
@@ -95,6 +111,8 @@ ul.menu li {
 }
 .info {
   background-image: url(assets/backgrounds/info-bg.jpg);
+  background-position-x: 50%;
+  background-position-y: 50%;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -110,8 +128,10 @@ ul.menu li {
   justify-self: center;
   align-items: center;
 }
-.info .title {
+.info .banner {
   width: 1000px;
+}
+.title {
   font-size: 80px;
   text-align: center;
   font-weight: 900;
@@ -120,9 +140,7 @@ ul.menu li {
   font-size: 22px;
   text-align: center;
 }
-.reference__btn {
-  margin: 15px;
-}
+
 /*--------------benefits*/
 #benefits {
   height: 500px;
@@ -147,17 +165,76 @@ ul.menu li {
 }
 /*credit*/
 .credit {
-  height: 500px;
+  height: 800px;
   background-color: #eee;
 }
-
+.credit h1 {
+  text-align: center;
+}
+.programs {
+  display: flex;
+  padding-top: 100px;
+}
+.program1 {
+  background-image: url(assets/img/buisness-credit.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 600px;
+  height: 480px;
+}
+.program2 {
+  background-image: url(assets/img/personal-credit.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 600px;
+  height: 480px;
+}
 /*special */
 .special {
-  height: 500px;
+  height: 580px;
+}
+.offers {
+  display: flex;
+}
+.offer {
+  flex-grow: 25%;
+  padding: 15px;
+  margin: 5px;
+}
+.offer__img img {
+  width: 270px;
+  height: 154px;
+}
+
+.offer__description {
+  text-align: center;
+}
+/*-------------------------HELP-----------------------------*/
+.help {
+  width: 100%;
+  height: 520px;
+  background-image: url(assets/backgrounds/help-bg.jpg);
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*---------------------------PARTNERS---------------------*/
+.partners {
+  width: 100%;
+  height: 520px;
+  background-image: url(assets/backgrounds/partners-bg.jpg);
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 /*---------------------FOOTER----------------------------------------*/
 footer {
   height: 240px;
-  background-color: #0f0f0f;
+  background-color: #232628;
 }
