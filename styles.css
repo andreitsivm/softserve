@@ -13,6 +13,7 @@ a {
   color: #fff;
   font-weight: bold;
   display: flex;
+  cursor: pointer;
   justify-content: center;
   align-items: center;
   width: 200px;
@@ -172,7 +173,6 @@ header {
   text-align: center;
 }
 .programs {
-  display: flex;
   padding-top: 100px;
 }
 .program1 {
@@ -190,7 +190,7 @@ header {
   height: 480px;
 }
 /*special */
-.special {
+#special {
   height: 580px;
 }
 .offers {
@@ -234,7 +234,13 @@ header {
 }
 
 /*-----------------------ABOUT-------------------------*/
+.about {
+  background-color: #eee;
+}
+
 .image__card1 {
+  height: 300px;
+  flex-grow: 1;
   background-image: url(assets/backgrounds/image1.jpg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -267,7 +273,35 @@ header {
 .size33 {
   flex-basis: 33%;
 }
-
+/*---------------------news-------------------*/
+#news {
+  background-color: #eee;
+  height: 600px;
+}
+.news__image1 {
+  width: 370px;
+  height: 210px;
+  background-image: url(assets/backgrounds/news1.jpg);
+  background-position-x: 50%;
+  background-position-y: 50%;
+  block-size: contain;
+}
+.news__image2 {
+  width: 370px;
+  height: 210px;
+  background-image: url(assets/backgrounds/news2.jpg);
+  background-position-x: 50%;
+  background-position-y: 50%;
+  block-size: contain;
+}
+.news__image3 {
+  width: 370px;
+  height: 210px;
+  background-image: url(assets/backgrounds/news3.jpg);
+  background-position-x: 50%;
+  background-position-y: 50%;
+  block-size: contain;
+}
 /*---------------------FOOTER----------------------------------------*/
 footer {
   height: 240px;

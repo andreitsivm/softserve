@@ -9,6 +9,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="form.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
@@ -110,7 +111,7 @@
         <div class="container">
           <div class="credit__propgrams">
             <h1 class="title">Кредитна програма</h1>
-            <div class="programs">
+            <div class="programs center">
               <div class="program1 white center column">
                 <h1>Тариф "Бізнес"</h1>
                 <a href="" class="btn btn-primary">Дізнатися більше</a>
@@ -123,7 +124,7 @@
           </div>
         </div>
       </div>
-      <div class="special">
+      <div id="special">
         <div class="container">
           <h1 class="title">Спеціальні пропозиції</h1>
           <div class="offers ">
@@ -168,8 +169,8 @@
          
         </div>
       </div>
-      <div class="help">
-        <div class="container">
+      <div class="help center">
+        <div class="container ">
         <div class="help__content center column">
           <h1 class="title white">Потрібна порада</h1>
           <h3 class="white">
@@ -216,20 +217,20 @@
           </div>
         </div>
       </div>
-      <div class="news">
+      <div id="news">
         <div class="container">
           <div class="news__content">
-            <h1>Новини автоіндустрії</h1>
-            <div class="news__container"></div>
+            <h1 class="title">Новини автоіндустрії</h1>
+            <div class="news__container center">
             <article class="news__item">
-              <img src="" alt="">
+              <div class="news__image1"></div>
               <div class="news__date"></div>
               <div class="news__title"><h1>Top five cars for less than £300 per month</h1></div>
               <div class="news__content"></div>
               <a href="" class="btn btn-secondary black">Read more</a>
             </article>
             <article class="news__item">
-              <img src="" alt="">
+              <div class="news__image2"></div>
               <div class="news__date"></div>
               <div class="news__title"><h1>Review: Citroen C3 Aircross,
                 a stylish  game-changer</h1></div>
@@ -237,7 +238,7 @@
               <a href="" class="btn btn-secondary black">Read more</a>
             </article>
             <article class="news__item">
-              <img src="" alt="">
+              <div class="news__image3"></div>
               <div class="news__date"></div>
               <div class="news__title"><h1>Audi and Hyundai to cooperate on hydrogen fuel</h1></div>
               <div class="news__content"></div>
@@ -245,33 +246,35 @@
             </article>
           </div>
         </div>
+          </div>
+        </div>
       </div>
-      <div class="contacts">
+      <div class="contacts center">
         <div class="container">
           <div class="contacts__content center">
-            <div class="adress">
+            <div id="contacts" class="adress">
               <h1>Наші Контакти</h1>
 
             </div>
             <div class="form__holder ">
               <form class="center column" action="">
-                <label >Ваше ім'я
-                <input type="text" name="user-name" id="user-name"></label>
-                <label >Номер телефону
-                <input type="phone" name="phone" id="phone"></label>
-                <label >Електронна пошта
-                <input type="email" name="email" id="email"></label>
-                <label >Суть вашого запитання
-                <textarea name="question" id="question" cols="30" rows="10"></textarea></label>
+                <label for="user-name" >Ваше ім'я</label>
+                <input class="form__control" type="text" name="user-name" id="user-name" placeholder="Ваше імя">
+                <label for="phone">Номер телефону</label>
+                <input class="form__control" type="phone" name="phone" id="phone" placeholder="Ваш номер телефону">
+                <label for="email" >Електронна пошта</label>
+                <input class="form__control" type="email" name="email" id="email" placeholder="Ваша електронна адреса">
+                <label for="question" >Суть вашого запитання </label>
+                <textarea class="form__control" name="question" id="question" cols="30" rows="10" placeholder="Ваше запитання"></textarea>
                 <button class="btn btn-primary">Надіслати запит</button>
               </form>
             </div>
           </div>
         </div>
       </div>
-      <div class="partners">
+      <div class="partners center">
         <div class="container">
-          <div class="partners__content">
+          <div class="partners__content white">
             <h1 class="title">Наші партнери</h1>
             <div class="partner__logo center">
               <h2>Uber</h2>

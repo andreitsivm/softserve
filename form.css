@@ -1,0 +1,31 @@
+.form__holder {
+  background-color: #153e4d;
+}
+input::placeholder,
+textarea::placeholder {
+  padding: 5px;
+  color: #263238;
+}
+label {
+  display: block;
+  color: #fff;
+}
+textarea.form__control {
+  height: auto;
+}
+.form__control {
+  color: #fff;
+  font-size: 16px;
+  padding: 5px;
+  background-color: #4d6c78;
+  width: 400px;
+  height: 44px;
+  border-radius: 5px;
+  margin: 5px;
+}
+input:focus {
+  outline: none;
+}
+textarea .form__control {
+  height: auto;
+}
