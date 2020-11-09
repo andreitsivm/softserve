@@ -318,6 +318,8 @@ footer {
   .general-title {
     font-size: 36px;
     line-height: 40px;
+    background-position-x: 0%;
+    background-position-y: 0%;
   }
   .general-buttons {
     flex-direction: column;
