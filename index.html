@@ -8,8 +8,9 @@
     />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="form.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/form.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
@@ -40,31 +41,31 @@
       </div>
     </header>
     <main class="content">
-      <div class="info">
+      <section class="general">
         <div class="container">
-          <div class="info__content">
+          <div class="general-content center column">
             <div class="banner">
-              <h1 class="title">Доставка автомобілів з США під ключ</h1>
+              <h1 class="general-title">Доставка автомобілів з США під ключ</h1>
             </div>
             <div class="subtitle">Ми візьмемо всю роботу на себе</div>
             <div class="subtitle">Працюємо надійно та професійно</div>
-            <div class="center">
+            <div class="general-buttons">
               <a href="/" class="btn btn-primary">Надіслати запит</a>
               <a href="/" class="btn btn-secondary">Дізнатися більше</a>
             </div>
           </div>
         </div>
-      </div>
-      <div id="benefits">
+      </section>
+      <section id="benefits">
         <div class="container">
-          <div class="card__container">
+          <div class="cards__container">
             <div class="card">
               <div class="card__logo">
                 <span style="font-size: 15px; color: Dodgerblue">
                   <i class="fas fa-dollar-sign fa-5x"></i
                 ></span>
               </div>
-              <div class="card__title"><h2>Оплата частинами</h2></div>
+              <div class="card__title"><span>Оплата частинами</span></div>
               <div class="card__description">
                 Не потрібно повністю оплачувати вартість послуг та автомобіля.
                 Ми надаємо можливість розділити платіж на декілька частин без
@@ -77,7 +78,7 @@
                   <i class="fas fa-dollar-sign fa-5x"></i
                 ></span>
               </div>
-              <div class="card__title"><h2>Конкурентні тарифи</h2></div>
+              <div class="card__title"><span>Конкурентні тарифи</span></div>
               <div class="card__description">
                 Ми постійно стежимо за цінами, щоб переконатися, що ми
                 забезпечимо вам найкращу пропозицію на ринку.
@@ -89,7 +90,7 @@
                   <i class="fas fa-dollar-sign fa-5x"></i
                 ></span>
               </div>
-              <div class="card__title"><h2>Гарантія якості</h2></div>
+              <div class="card__title"><span>Гарантія якості</span></div>
               <div class="card__description">
                 Ми даємо гарантію на кожен автомобіль компанії. Всі транспортні
                 засоби ретельно перевіряються та застраховані від поломки.
@@ -101,7 +102,7 @@
                   <i class="fas fa-dollar-sign fa-5x"></i
                 ></span>
               </div>
-              <div class="card__title"><h2>Втілюємо мрії</h2></div>
+              <div class="card__title"><span>Втілюємо мрії</span></div>
               <div class="card__description">
                 Знайдемо для вас автомобіль мрії. Будь-які марки автомобілів,
                 моделі, та комлектації. Для нас бажання клієнта закон
@@ -109,33 +110,33 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="credit">
+      </section>
+      <section id="credit">
         <div class="container">
           <div class="credit__propgrams">
-            <h1 class="title">Кредитна програма</h1>
+            <h2 class="title">Кредитна програма</h2>
             <div class="programs center">
-              <div class="program1 white center column">
-                <h1>Тариф "Бізнес"</h1>
+              <div class="program program-business white">
+                <h2>Тариф "Бізнес"</h2>
                 <a href="" class="btn btn-primary">Дізнатися більше</a>
               </div>
-              <div class="program2 white center column">
-                <h1>Тариф "Персональний"</h1>
+              <div class="program program-personal white">
+                <h2>Тариф "Персональний"</h2>
                 <a href="" class="btn btn-primary">Дізнатися більше</a>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div id="special">
+      </section>
+      <section id="special">
         <div class="container">
-          <h1 class="title">Спеціальні пропозиції</h1>
+          <h2 class="title">Спеціальні пропозиції</h2>
           <div class="offers">
             <div class="offer">
               <div class="offer__img">
                 <img src="assets/img/citroen.jpeg" alt="Citroen c3" />
               </div>
-              <div class="offer__title center"><h1>CITROEN</h1></div>
+              <div class="offer__title center"><h3>CITROEN</h3></div>
               <div class="offer__description">
                 Citroen C4 Hatchback 1.2 PureTech 82 Flair від $500 на місяць
               </div>
@@ -144,7 +145,7 @@
               <div class="offer__img">
                 <img src="assets/img/bmw.jpg" alt="BMW" />
               </div>
-              <div class="offer__title center"><h1>BMW</h1></div>
+              <div class="offer__title center"><h3>BMW</h3></div>
               <div class="offer__description">
                 2 Series Coupé 320i M Sport від $1000 на місяць
               </div>
@@ -153,7 +154,7 @@
               <div class="offer__img">
                 <img src="assets/img/merc.jpg" alt="Mercedes-Benz" />
               </div>
-              <div class="offer__title center"><h1>Mercedes-Benz</h1></div>
+              <div class="offer__title center"><h3>Mercedes-Benz</h3></div>
               <div class="offer__description">
                 Mercedes-Benz CLK Coupé 220d 4matic Urban edition 5 dr від $1500
                 на місяць
@@ -163,7 +164,7 @@
               <div class="offer__img">
                 <img src="assets/img/golf.jpg" alt="VW Golf" />
               </div>
-              <div class="offer__title center"><h1>Volkswagen</h1></div>
+              <div class="offer__title center"><h3>Volkswagen</h3></div>
               <div class="offer__description">
                 Volkswagen Golf Hatchback 2.0 TSI 245 GTI Performance 5dr від
                 $450 на місяць
@@ -171,17 +172,15 @@
             </div>
           </div>
           <div class="center">
-            <a href="" class="btn btn-secondary black center__text"
-              >Переглянути всі</a
-            >
+            <a href="" class="btn btn-secondary black">Переглянути всі</a>
           </div>
         </div>
-      </div>
-      <div class="help center">
+      </section>
+      <section class="help center">
         <div class="container">
           <div class="help__content center column">
             <h1 class="title white">Потрібна порада</h1>
-            <h3 class="white">
+            <h3 class="help__message white">
               Хочете, щоб хтось вам допоміг? Це саме те, що ми робимо. Ви можете
               зв’язатися з нашою командою з усіх питань , які вас цікавлять Від
               початку та до кінця. Просто запитайте!
@@ -189,50 +188,54 @@
             <a href="" class="btn btn-primary">Запитати</a>
           </div>
         </div>
-      </div>
-      <div class="about">
+      </section>
+      <section class="about">
         <div class="container">
-          <div class="about__content">
-            <h1 class="title">Все що вам портрібно знати зібрано тут</h1>
-            <div class="images white center">
-              <div class="about__card card1">
+          <div class="about__content center column">
+            <h2 class="title">Все що вам портрібно знати зібрано тут</h2>
+            <div class="about__images white ">
+              
+              <div class="about__card card1 center">
                 <h3>Повне страхування</h3>
               </div>
-              <div class="about__card card2">
+              <div class="about__card card2 center">
                 <h3>Технічне обслуговування та ремонт</h3>
               </div>
-              <div class="aboute__card card3">
+              <div class="about__card card3 center">
                 <h3>Доступне кожному авто</h3>
               </div>
+           
+              
               <div class="about__card card4">
                 <h3>Гарантія якості</h3>
               </div>
-              <div class="about__card card5">
+              <div class="about__card card5 center">
                 <h3>Мінімальний термін виконання</h3>
               </div>
-              <div class="about__card card6">
+              <div class="about__card card6 center">
                 <h3>Юридичний супровід</h3>
               </div>
+            
             </div>
           </div>
         </div>
-      </div>
-      <div class="testimonials">
+      </section>
+      <div id="testimonials">
         <div class="container">
           <h1 class="title">Клієнти про нас</h1>
           <div class="slider"></div>
         </div>
       </div>
-      <div id="news">
+      <section id="news">
         <div class="container">
           <div class="news__content">
-            <h1 class="title">Новини автоіндустрії</h1>
-            <div class="news__container center">
+            <h2 class="title">Новини автоіндустрії</h2>
+            <div class="news__container">
               <article class="news__item">
                 <div class="news__image1"></div>
                 <div class="news__date"></div>
                 <div class="news__title">
-                  <h2>Top five cars for less than £300 per month</h2>
+                  <h3>Top five cars for less than £300 per month</h3>
                 </div>
                 <div class="news__content"></div>
                 <a href="#" class="btn btn-secondary black">Read more</a>
@@ -241,7 +244,7 @@
                 <div class="news__image2"></div>
                 <div class="news__date"></div>
                 <div class="news__title">
-                  <h2>Review: Citroen C3 Aircross, a stylish game-changer</h2>
+                  <h3>Review: Citroen C3 Aircross, a stylish game-changer</h3>
                 </div>
                 <div class="news__content"></div>
                 <a href="#" class="btn btn-secondary black">Read more</a>
@@ -250,7 +253,7 @@
                 <div class="news__image3"></div>
                 <div class="news__date"></div>
                 <div class="news__title">
-                  <h2>Audi and Hyundai to cooperate on hydrogen fuel</h2>
+                  <h3>Audi and Hyundai to cooperate on hydrogen fuel</h3>
                 </div>
                 <div class="news__content"></div>
                 <a href="#" class="btn btn-secondary black">Read more</a>
@@ -258,12 +261,12 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="contacts center">
+      </section>
+      <div class="contacts">
         <div class="container">
-          <div class="contacts__content center">
+          <div class="contacts__info ">
             <div id="contacts" >
-              <h1>Наші Контакти</h1>
+              <h2>Наші Контакти</h2>
               <p>Не знаєте з чого почати? Потрібна порада ?<br> Наша команда консультантів тут, щоб допомогти.</p>
               <div class="contact__info">
                 <div class="adress">
@@ -281,7 +284,7 @@
                 </div>
               </div>
             </div>
-            <div class="form__holder">
+            <div class="form__container">
               <form
                 class="center column"
                 action="https://formspree.io/f/mqkgbnan"
@@ -333,10 +336,10 @@
           <div class="partners__content white">
             <h1 class="title">Наші партнери</h1>
             <div class="partner__logo center">
-              <h2>Uber</h2>
-              <h2>Bolt</h2>
-              <h2>Uklon</h2>
-              <h2>OnTaxi</h2>
+              <div>Uber</div>
+              <div>Bolt</div>
+              <div>Uklon</div>
+              <div>OnTaxi</div>
             </div>
           </div>
         </div>

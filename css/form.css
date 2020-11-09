@@ -1,5 +1,10 @@
-.form__holder {
+.contacts__info {
+  display: flex;
+  justify-content: center;
+}
+.form__container {
   background-color: #153e4d;
+  margin: 15px 0;
 }
 input::placeholder,
 textarea::placeholder {
@@ -23,6 +28,11 @@ textarea.form__control {
   border-radius: 5px;
   margin: 5px;
 }
+@media (max-width: 769px) {
+  .form__control {
+    width: 320px;
+  }
+}
 input:focus {
   outline: none;
 }
@@ -31,4 +41,9 @@ textarea .form__control {
 }
 .contacts {
   margin-right: 30px;
+}
+@media (max-width: 769px) {
+  .contacts__info {
+    flex-direction: column;
+  }
 }
