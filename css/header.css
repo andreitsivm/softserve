@@ -1,0 +1,42 @@
+/*-----------------------HEADER---------------------------*/
+header {
+  background-color: #232628;
+  position: fixed;
+  width: 100%;
+}
+.header__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+.logo {
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+  font-size: 32px;
+}
+.burger {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .burger {
+    display: block;
+  }
+  .menu {
+    display: none;
+  }
+}
+/*Mobile*/
+@media (max-width: 769px) {
+  .header__body {
+    padding: 0 20px;
+  }
+  .burger {
+    display: block;
+  }
+  .menu {
+    display: none;
+  }
+}

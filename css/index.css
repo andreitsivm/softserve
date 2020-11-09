@@ -11,27 +11,6 @@
   margin: 0 auto;
   max-width: 1200px;
 }
-/*-----------------------HEADER---------------------------*/
-header {
-  background-color: #232628;
-  position: fixed;
-  width: 100%;
-}
-.header__body {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 60px;
-}
-.logo {
-  font-weight: bold;
-  cursor: pointer;
-  color: #fff;
-  font-size: 32px;
-}
-.burger {
-  display: none;
-}
 
 /*------------------------------MAIN---------------------------------*/
 /*info*/
