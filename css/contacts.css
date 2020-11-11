@@ -1,10 +1,14 @@
+#contacts {
+  display: flex;
+}
 .contacts__info {
   display: flex;
-  justify-content: center;
+  padding: 100px 0;
 }
+
 .form__container {
+  padding: 50px;
   background-color: #153e4d;
-  margin: 15px 0;
 }
 input::placeholder,
 textarea::placeholder {
@@ -26,7 +30,7 @@ textarea.form__control {
   width: 400px;
   height: 44px;
   border-radius: 5px;
-  margin: 5px;
+  margin: 5px 0;
 }
 @media (max-width: 769px) {
   .form__control {
@@ -39,11 +43,25 @@ input:focus {
 textarea .form__control {
   height: auto;
 }
-.contacts {
+#contacts {
   margin-right: 30px;
 }
 @media (max-width: 769px) {
+  .form__container {
+    padding: 0px;
+  }
   .contacts__info {
     flex-direction: column;
+    padding: 0;
+  }
+  textarea.form__control {
+    width: 300px;
+  }
+  .form__control {
+    width: 300px;
+  }
+  #contacts {
+    margin: 0;
+    padding: 0 15px;
   }
 }

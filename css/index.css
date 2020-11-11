@@ -150,6 +150,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  min-height: 240px;
 }
 
 /*-----------------------ABOUT-------------------------*/
@@ -163,6 +164,9 @@
   width: 400px;
   height: 270px;
   font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 .about__images {
@@ -248,11 +252,12 @@
 /*testi*/
 #testimonails {
   width: 100%;
+  min-height: 300px;
 }
 /*---------------------FOOTER----------------------------------------*/
 footer {
   width: 100%;
-  height: 240px;
+  min-height: 120px;
   background-color: #232628;
 }
 
@@ -307,6 +312,18 @@ footer {
   .header__body {
     padding: 0 20px;
   }
+  #benefits {
+    padding: 0;
+  }
+  #credit {
+    padding: 5px 0;
+  }
+  #special {
+    padding: 0;
+  }
+  .about {
+    padding: 0;
+  }
   .burger {
     display: block;
   }
@@ -353,5 +370,8 @@ footer {
   }
   .news__image {
     width: 100%;
+  }
+  footer {
+    min-height: 40px;
   }
 }

@@ -10,7 +10,7 @@ a {
   text-decoration: none;
 }
 
-.btn {
+.button {
   color: #fff;
   font-weight: bold;
   display: flex;
@@ -23,20 +23,20 @@ a {
   margin: 20px 20px;
   transition: all 0.6s ease;
 }
-.btn-primary:hover {
+.button-primary:hover {
   background-color: #fff;
   color: #000;
 }
-.btn-primary {
+.button-primary {
   background-color: #1976d2;
   border-radius: 5px;
 }
-.btn-secondary {
+.button-secondary {
   border: 1px solid green;
   border-radius: 5px;
   background-color: transparent;
 }
-.btn-secondary:hover {
+.button-secondary:hover {
   background-color: green;
 }
 .black {
