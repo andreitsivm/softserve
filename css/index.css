@@ -309,7 +309,7 @@
 
 /*testi*/
 #testimonials {
-  padding: 120px 0;
+  padding-top: 20px;
   width: 100%;
   min-height: 300px;
 }
@@ -321,7 +321,7 @@
   text-align: center;
 }
 .carousel-item {
-  height: 400px;
+  min-height: 250px;
 }
 .client-photo_container {
   display: flex;
@@ -394,6 +394,7 @@ footer .footer-content {
     grid-template-columns: 50% 50%;
     grid-template-rows: 33% 33% 33%;
   }
+
   #news {
     padding: 10px 0;
   }
@@ -414,6 +415,9 @@ footer .footer-content {
   }
   .burger {
     display: block;
+  }
+  .carousel-item {
+    min-height: 240px;
   }
   .menu {
     display: none;
@@ -569,10 +573,14 @@ footer .footer-content {
   .testimonial {
     font-size: 20px;
   }
+  .carousel-item {
+    min-height: 400px;
+  }
   .partner__logo img {
     margin-right: 0;
     margin-bottom: 20px;
   }
+
   footer {
     min-height: 40px;
   }
