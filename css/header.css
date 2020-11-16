@@ -2,6 +2,7 @@
 header {
   background-color: #232628;
   position: fixed;
+  z-index: 1000;
   width: 100%;
 }
 .header__body {

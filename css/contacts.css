@@ -32,7 +32,7 @@ textarea.form__control {
   border-radius: 5px;
   margin: 5px 0;
 }
-@media (max-width: 769px) {
+@media (max-width: 767px) {
   .form__control {
     width: 320px;
   }

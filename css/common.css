@@ -26,6 +26,7 @@ a {
 .button-primary:hover {
   background-color: #fff;
   color: #000;
+  text-decoration: none;
 }
 .button-primary {
   background-color: #1976d2;
@@ -38,6 +39,8 @@ a {
 }
 .button-secondary:hover {
   background-color: green;
+  text-decoration: none;
+  color: #000;
 }
 .black {
   color: #000;
@@ -63,6 +66,7 @@ a {
 }
 .link:hover {
   color: #2378f3;
+  text-decoration: none;
 }
 
 .title {

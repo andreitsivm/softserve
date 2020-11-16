@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: center;
 }
-.container {
+.own-container {
   margin: 0 auto;
   max-width: 1200px;
 }
@@ -17,7 +17,11 @@
 .general {
   width: 100%;
   height: 800px;
-  background-image: url(../assets/backgrounds/info-bg.jpg);
+  background-image: linear-gradient(
+      rgba(35, 38, 40, 0.74),
+      rgba(35, 38, 40, 0.74)
+    ),
+    url(../assets/backgrounds/info-bg.jpg);
   background-position-x: 50%;
   background-position-y: 50%;
   background-size: cover;
@@ -80,8 +84,12 @@
   background-color: #eee;
 }
 .programs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding-top: 50px;
 }
+
 .program {
   display: flex;
   flex-direction: column;
@@ -91,12 +99,20 @@
   height: 480px;
 }
 .program-business {
-  background-image: url(../assets/img/buisness-credit.jpg);
+  background-image: linear-gradient(
+      rgba(21, 62, 77, 0.74),
+      rgba(21, 62, 77, 0.74)
+    ),
+    url(../assets/img/buisness-credit.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 .program-personal {
-  background-image: url(../assets/img/personal-credit.jpg);
+  background-image: linear-gradient(
+      rgba(21, 62, 77, 0.74),
+      rgba(21, 62, 77, 0.74)
+    ),
+    url(../assets/img/personal-credit.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -109,9 +125,7 @@
   display: flex;
 }
 .offer {
-  flex-grow: 25%;
-  padding: 15px;
-  margin: 5px;
+  padding: 0 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -129,7 +143,11 @@
 .help {
   width: 100%;
   padding: 120px;
-  background-image: url(../assets/backgrounds/help-bg.jpg);
+  background-image: linear-gradient(
+      rgba(21, 62, 77, 0.74),
+      rgba(21, 62, 77, 0.74)
+    ),
+    url(../assets/backgrounds/help-bg.jpg);
   background-position-x: 50%;
   background-position-y: 50%;
   background-repeat: no-repeat;
@@ -144,13 +162,25 @@
 .partners {
   padding: 12px 0;
   width: 100%;
-  background-image: url(../assets/backgrounds/partners-bg.jpg);
+  min-height: 400px;
+  background-image: linear-gradient(
+      rgba(21, 62, 77, 0.74),
+      rgba(21, 62, 77, 0.74)
+    ),
+    url(../assets/backgrounds/partners-bg.jpg);
   background-position-x: 50%;
   background-position-y: 50%;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  min-height: 240px;
+}
+.partner__logo {
+  display: flex;
+}
+.partner__logo img {
+  width: 200px;
+  height: 100px;
+  margin-right: 50px;
 }
 
 /*-----------------------ABOUT-------------------------*/
@@ -158,6 +188,7 @@
   width: 100%;
   padding: 120px 0;
   background-color: #eee;
+  min-height: 600px;
 }
 
 .about__card {
@@ -175,36 +206,60 @@
   grid-template-rows: 50% 50%;
 }
 .card1 {
-  background-image: url(../assets/backgrounds/image1.jpg);
+  background-image: linear-gradient(
+      rgba(35, 38, 40, 0.56),
+      rgba(35, 38, 40, 0.56)
+    ),
+    url(../assets/backgrounds/image1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: 50%;
   background-position-y: 50%;
 }
 .card2 {
-  background-image: url(../assets/backgrounds/image2.jpg);
+  background-image: linear-gradient(
+      rgba(35, 38, 40, 0.56),
+      rgba(35, 38, 40, 0.56)
+    ),
+    url(../assets/backgrounds/image2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: 50%;
   background-position-y: 50%;
 }
 .card3 {
-  background-image: url(../assets/backgrounds/image3.jpg);
+  background-image: linear-gradient(
+      rgba(35, 38, 40, 0.56),
+      rgba(35, 38, 40, 0.56)
+    ),
+    url(../assets/backgrounds/image3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 .card4 {
-  background-image: url(../assets/backgrounds/image4.jpg);
+  background-image: linear-gradient(
+      rgba(35, 38, 40, 0.56),
+      rgba(35, 38, 40, 0.56)
+    ),
+    url(../assets/backgrounds/image4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 .card5 {
-  background-image: url(../assets/backgrounds/image5.jpg);
+  background-image: linear-gradient(
+      rgba(35, 38, 40, 0.56),
+      rgba(35, 38, 40, 0.56)
+    ),
+    url(../assets/backgrounds/image5.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 .card6 {
-  background-image: url(../assets/backgrounds/image6.jpg);
+  background-image: linear-gradient(
+      rgba(35, 38, 40, 0.56),
+      rgba(35, 38, 40, 0.56)
+    ),
+    url(../assets/backgrounds/image6.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -225,6 +280,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.news__title h3 {
+  font-size: 20px;
 }
 .news__image {
   width: 370px;
@@ -250,26 +308,108 @@
 }
 
 /*testi*/
-#testimonails {
+#testimonials {
+  padding: 120px 0;
   width: 100%;
   min-height: 300px;
 }
+.testimonial {
+  width: 100%;
+}
+.carousel-item {
+  padding: 0 10px;
+  text-align: center;
+}
+.carousel-item {
+  height: 400px;
+}
+.client-photo_container {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+.client-photo {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  background-size: cover;
+}
+.kate {
+  background-image: url(../assets/img/kate.jpg);
+  background-position: 80% 30%;
+}
+.anton {
+  background-image: url(../assets/img/anton.jpg);
+  background-position: 80% 0;
+}
+.victor {
+  background-image: url(../assets/img/victor.jpg);
+  background-position: 80% 30%;
+}
+
 /*---------------------FOOTER----------------------------------------*/
 footer {
   width: 100%;
   min-height: 120px;
   background-color: #232628;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 10px;
+}
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__info {
+  padding-right: 30px;
+  color: gray;
+}
+.footer-content__item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.social_network {
+  font-size: 30px;
 }
 
 /*Laptop*/
 @media (max-width: 1200px) {
-  .container {
+  .own-container {
     max-width: 970px;
+  }
+  .offers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .news__image {
+    width: 300px;
+    height: 210px;
+  }
+  .about__images {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33% 33% 33%;
+  }
+  #news {
+    padding: 10px 0;
+  }
+  #testimonials {
+    padding: 10px 0;
+  }
+  .about {
+    padding: 20px 0;
+  }
+  .help {
+    background-position: 80% 0%;
   }
 }
 /*Tab*/
 @media (max-width: 992px) {
-  .container {
+  .own-container {
     max-width: 768px;
   }
   .burger {
@@ -278,19 +418,35 @@ footer {
   .menu {
     display: none;
   }
+  .programs {
+    width: 100%;
+    flex-direction: column;
+  }
+  .program {
+    width: 100%;
+    height: 300px;
+  }
   .general-title {
     font-size: 33px;
     line-height: 40px;
   }
   .cards__container {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .about__card {
+    width: 380px;
   }
   .about__images {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   .offers {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
   .offer {
     flex: 1 0 100%;
@@ -299,12 +455,22 @@ footer {
     flex-direction: column;
   }
   .news__image {
-    width: 100%;
+    width: 530px;
+    height: 350px;
+  }
+  .news__title {
+    padding-top: 10px;
+  }
+  .partner__logo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 20px;
   }
 }
 /*Mobile*/
-@media (max-width: 769px) {
-  .container {
+@media (max-width: 767px) {
+  .own-container {
     min-width: 320px;
     max-width: none;
     margin: 0 auto;
@@ -315,8 +481,19 @@ footer {
   #benefits {
     padding: 0;
   }
+  .cards__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .benefit-card {
+    padding: 20px 0;
+  }
+
   #credit {
     padding: 5px 0;
+  }
+  #testimonials {
+    padding: 0;
   }
   #special {
     padding: 0;
@@ -343,15 +520,23 @@ footer {
     flex-direction: column;
   }
   .programs {
+    padding: 0;
+    margin: 0;
     flex-direction: column;
   }
-  .program-business {
-    width: 320px;
+  .program {
+    width: 100%;
   }
-  .program-personal {
-    width: 320px;
+  .program h2 {
+    font-size: 24px;
+  }
+  .help__message {
+    font-size: 16px;
   }
   .offers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
   }
   .offer {
@@ -360,6 +545,9 @@ footer {
   .about__card {
     width: 100%;
     height: 270px;
+  }
+  #news {
+    padding: 0;
   }
   .about__images {
     display: flex;
@@ -371,7 +559,24 @@ footer {
   .news__image {
     width: 100%;
   }
+  .partner__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0;
+  }
+  .testimonial {
+    font-size: 20px;
+  }
+  .partner__logo img {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
   footer {
     min-height: 40px;
+  }
+  .footer-content {
+    flex-direction: column;
   }
 }
